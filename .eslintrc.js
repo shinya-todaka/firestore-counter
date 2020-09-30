@@ -42,6 +42,7 @@ module.exports = {
     quotes: ['error', 'single', { avoidEscape: true }],
     'require-yield': 'error',
     semi: ['error', 'always'],
+    'consistent-this': [2, 'self'],
 
     // @typescript-eslint
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -51,6 +52,7 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
     '@typescript-eslint/no-unused-vars': 'error',
     '@typescript-eslint/prefer-interface': 'off',
+    '@typescript-eslint/no-this-alias': 'off',
 
     // airbnb
     'no-restricted-syntax': [
@@ -110,7 +112,7 @@ module.exports = {
   },
   settings: {
     'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
+      '@typescript-eslint/parser': ['.ts', '.tsx', 'js'],
     },
     'import/resolver': {
       node: {

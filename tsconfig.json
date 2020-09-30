@@ -7,10 +7,13 @@
       "strict": true,
       "esModuleInterop": true,
       "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true
+      "forceConsistentCasingInFileNames": true,
+      "allowJs": true
   },
   "include": [
     "src/**/*",
+    "example.ts",
+    "firebaseConfig.js",
     ".eslintrc.js"
   ],
 }
